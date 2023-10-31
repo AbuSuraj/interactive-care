@@ -6,6 +6,7 @@ import HeroSection from './components/Hero-section/HeroSection'
 import Navbar from './components/Navbar/Navbar'
 import ServiceSection from './components/Our-Services/Services'
 import ProcessSection from './components/Process-Section/ProcessSection'
+import StatSection from './components/State/State'
 
 function App() { 
 
@@ -17,6 +18,7 @@ function App() {
        <ServiceSection></ServiceSection>
        <ProcessSection></ProcessSection>
        <About></About>
+       <StatSection></StatSection>
        <Footer></Footer>
     </>
   )
