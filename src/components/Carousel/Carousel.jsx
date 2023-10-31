@@ -21,7 +21,7 @@ function Carousel({
     slidesToScroll: 1,
     autoplay: true,
     // fade: true,
-    autoplaySpeed: 343000,
+    autoplaySpeed: 3000,
     nextArrow: <></>,
     prevArrow: <></>,
     responsive: [
