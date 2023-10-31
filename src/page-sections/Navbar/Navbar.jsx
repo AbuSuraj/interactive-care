@@ -9,6 +9,7 @@ const Navbar = () => {
   };
 
   return (
+    <div className='relative md:sticky md:top-0 md:left-0 md:right-0 md:w-full md:z-10'>
     <div className='h-12 flex justify-between items-center 
      mx-auto px-4 bg-slate-100'>
       <div className="flex items-center justify-center md:justify-start cursor-pointer hover:bg-slate-200 hover:rounded-3xl">
@@ -38,6 +39,7 @@ const Navbar = () => {
           <a href='#stats' className='p-4 text-center text-white border-b border-gray-600 cursor-pointer  hover:text-black hover:bg-slate-200 hover:rounded-3xl'>Stats</a>
           <a href='#testimonials' className='p-4 text-center text-white border-b border-gray-600 cursor-pointer  hover:text-black hover:bg-slate-200 hover:rounded-3xl'>Testimonials</a>
       </ul>
+    </div>
     </div>
   );
 };
