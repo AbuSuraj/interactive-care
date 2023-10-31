@@ -4,7 +4,7 @@ import Client3 from "./../../assets/images/Client3.svg";
 import Client4 from "./../../assets/images/Client4.svg";
 // import Client5 from "./../../assets/Client5.svg";
 import Client6 from "./../../assets/images/Client6.svg";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../../components/Carousel/Carousel";
 
 const testimonials = [
     {

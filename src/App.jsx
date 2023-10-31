@@ -1,13 +1,13 @@
 import './App.css' 
-import About from './components/About/About'
-import Clients from './components/Clients/Clients'
-import Footer from './components/Footer/Footer'
-import HeroSection from './components/Hero-section/HeroSection'
-import Navbar from './components/Navbar/Navbar'
-import ServiceSection from './components/Our-Services/Services'
-import ProcessSection from './components/Process-Section/ProcessSection'
-import StatSection from './components/State/State'
-import Testimonials from './components/Testimonials/Testimonials'
+import About from './pages/About/About'
+import Clients from './pages/Clients/Clients'
+import Footer from './pages/Footer/Footer'
+import HeroSection from './pages/Hero-section/HeroSection'
+import Navbar from './pages/Navbar/Navbar'
+import ServiceSection from './pages/Our-Services/Services'
+import ProcessSection from './pages/Process-Section/ProcessSection'
+import StatSection from './pages/State/State'
+import Testimonials from './pages/Testimonials/Testimonials' 
 
 function App() { 
 
