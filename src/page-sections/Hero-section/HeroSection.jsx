@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 // import image from "../../assets/images/Hero01.svg"
 import { Player } from '@lottiefiles/react-lottie-player';
-import './HeroSection.css'
+import './HeroSection.css' 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init();  
+  }, []);
+
   const [changingTitle, setChangingTitle] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const description = "We are the type of partners you can count on! We have successfully helped b2b businesses, b2c businesses, and start-ups stream more revenues by connecting to the right audiences at the right time!";
@@ -38,7 +44,7 @@ const HeroSection = () => {
     <section>
       <div className="hero-container">
         <div className="mt-10 text-container">
-          <div className="w-4/5">
+          <div  data-aos="fade-down-right" className="w-4/5">
             <h1 className="mt-10 lg:mt-4 text-[28px] lg:text-[35px]     font-semibold   text-black capitalize font-heading">
               {title}
             </h1>
@@ -52,7 +58,7 @@ const HeroSection = () => {
               {description}
             </p>
           </div>
-          <div className="flex my-5">
+          <div  data-aos="fade-down-left" className="flex my-5">
             <div className="mt-10 flex items-center gap-x-6 cursor-pointer">
               <a
                 href="/contact-us"

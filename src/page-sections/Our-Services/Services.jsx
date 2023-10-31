@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import customized_conatct_list_icon from "./../../assets/customized-contact-list-icon.svg";
 import customized_conatct_list_icon from "./../../assets/images/customized-contact-list-icon.svg";
 import email_marketing_icon from "./../../assets/images/email-marketing-icon.svg";
@@ -7,8 +7,9 @@ import administrative_support_icon from "./../../assets/images/administrative-su
 import linkedin_outreach_icon from "./../../assets/images/linkedin-outreach-icon.svg";
 import web_analytics_icon from "./../../assets/images/web-analytics-icon.svg";
 import SideImage from "./../../assets/images/About11.svg";
-// import Image from "next/image";
-
+// import Image from "next/image"; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const services = [
   {
     name: "Customize Contact List",
@@ -61,13 +62,15 @@ const services = [
 ];
 
 export default function ServiceSection() {
- 
+  useEffect(() => {
+    AOS.init();  
+  }, []);
  
   return (
     <React.Fragment>
       <div className="px-4 lg:px-12 my-5 py-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-1 md:gap-x-12 gap-y-8 lg:gap-y-16 text-center lg:text-start  sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          <div>
+          <div data-aos="fade-up-right">
             <h1 className=" mt-4 lg:mt-4 text-[28px] lg:text-[35px] leading-[40px] lg:leading-[48px] font-semibold trackin-wide text-black capitalize font-heading">
               What we offer to our clients ?
             </h1>
@@ -81,9 +84,10 @@ export default function ServiceSection() {
             </div>
           </div>
 
-          <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
+          <dl data-aos="fade-up-left" className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
             {services.map((service) => (
               <div
+              data-aos="flip-left"
                 key={service.name}
                 className="shadow-[8px_34px_70px_-6px_rgba(7,_12,_15,_0.05)] rounded-2xl bg-white p-8"
               >

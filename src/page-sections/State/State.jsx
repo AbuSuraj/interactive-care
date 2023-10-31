@@ -1,3 +1,6 @@
+import  { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const stats = [
     { id: 1, name: "Cold Calls per day", value: "60+", color: "#a5a3e7" },
     { id: 2, name: "Email per day", value: "300+", color: "#86d2a3" },
@@ -6,15 +9,20 @@ const stats = [
 ];
 
 export default function StatSection() {
+
+    useEffect(() => {
+        AOS.init();  
+      }, []);
+
     return (
         <div className="relative lg:pt-24 py-16">
             <div className="bg-[#fafafa] lg:px-32 pb-16 pt-16 px-6">
-                <div className="text-center">
+                <div data-aos="fade-up" className="text-center">
                     <h1 className="text-[28px] lg:text-[35px] leading-[40px] lg:leading-[48px] font-semibold trackin-wide text-black capitalize font-heading">
                         Trusted by creators worldwide
                     </h1>
                 </div>
-                <dl className="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+                <dl data-aos="fade-down" className="mt-8 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
                     {stats.map((stat) => (
                         <div
                             key={stat.id}

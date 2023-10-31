@@ -5,7 +5,9 @@ import Client4 from "./../../assets/images/Client4.svg";
 // import Client5 from "./../../assets/Client5.svg";
 import Client6 from "./../../assets/images/Client6.svg";
 import Carousel from "../../components/Carousel/Carousel";
-
+import  { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const testimonials = [
     {
         id: 0,
@@ -79,15 +81,19 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  useEffect(() => {
+    AOS.init();  
+  }, []);
+
     return (
         <div className="lg:px-32 py-12 lg:py-16 px-4">
-        <div className="mx-auto max-w-lg text-center">
+        <div data-aos="fade-left" className="mx-auto max-w-lg text-center">
           <h1 className="text-[28px] lg:text-[35px] leading-[40px] lg:leading-[48px] font-semibold tracking-wide text-black capitalize font-heading">
             What Our Clients Say
           </h1>
         </div>
   
-        <div className="mx-auto mt-8 lg:mt-8 flow-root sm:mt-16 lg:mx-0 lg:max-w-none">
+        <div data-aos="fade-right" className="mx-auto mt-8 lg:mt-8 flow-root sm:mt-16 lg:mx-0 lg:max-w-none">
           <Carousel>
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="pt-8 sm:inline-block sm:w-full sm:px-4">

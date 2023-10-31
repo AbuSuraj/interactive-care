@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import About08 from "./../../assets/images/About08.svg";
 import About10 from "./../../assets/images/About10.svg";
-import About11 from "./../../assets/images/About11.svg";
- 
+import About11 from "./../../assets/images/About11.svg"; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import React from 'react';
 const landingPageItems = [
     {
@@ -25,6 +26,10 @@ const landingPageItems = [
     },
   ];
 const ProcessSection = () => {
+  useEffect(() => {
+    AOS.init();  
+  }, []);
+
    const title="How is outbound marketing the ultimate solution you need for your business?"
     
          
@@ -63,7 +68,7 @@ const ProcessSection = () => {
           </div>
           <div className="mx-auto mt-12  flex max-w-2xl flex-col gap-16 ring-1 ring-white/10 sm:rounded-3xl lg:mx-0 lg:max-w-none lg:flex-row lg:items-center xl:gap-x-20">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="flex flex-col">
+              <div data-aos="fade-right" className="flex flex-col">
                 {items.map((item, index) => (
                   <div
                     className={`relative mb-6 ${
@@ -98,7 +103,7 @@ const ProcessSection = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-end">
+              <div data-aos="fade-left" className="flex justify-end">
                 <div className="h-[450px] w-full flex-none rounded-2xl shadow-xl lg:aspect-square">
                   <img
                     src={items[activeIndex].image}
