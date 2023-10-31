@@ -2,7 +2,7 @@
 
 DigitalDynamo is a feature-rich e-commerce website tailored for all your digital marketing needs. Whether you're a small business owner or a marketing professional, DigitalDynamo offers a wide range of digital marketing services and products to help you grow your online presence and reach your target audience effectively.
 
-## Project live site link: https://space-flight-explorer.netlify.app/
+## Project live site link: https://digitaldynamo.netlify.app/
 
 ## Sections Overview
 
