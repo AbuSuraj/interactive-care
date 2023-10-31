@@ -1,8 +1,9 @@
-import './App.css'
-import Example from './components/Clients/Clients'
+import './App.css' 
+import Clients from './components/Clients/Clients'
 import Footer from './components/Footer/Footer'
 import HeroSection from './components/Hero-section/HeroSection'
 import Navbar from './components/Navbar/Navbar'
+import ServiceSection from './components/Our-Services/Services'
 
 function App() { 
 
@@ -10,7 +11,8 @@ function App() {
     <>
        <Navbar></Navbar>
        <HeroSection></HeroSection>
-       <Example></Example>
+       <Clients></Clients>
+       <ServiceSection></ServiceSection>
        <Footer></Footer>
     </>
   )

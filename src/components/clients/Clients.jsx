@@ -8,7 +8,7 @@ import mashable from '../../assets/images/mashable.svg'
 
 
 const companies = [airbnb,google,microsoft,shopify,mail,mashable]
-export default function Example() { 
+export default function Clients() { 
  const title="Trusted over 200+ Companies"
   return (
     <section
