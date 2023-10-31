@@ -1,0 +1,16 @@
+.hero-container{ 
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    /* Medium screens and above */
+    .hero-container {
+      flex-direction: column-reverse; /* Side-by-side layout for medium and larger screens */
+    }
+  
+    .text-container,
+    .image-container {
+      flex: 1;
+    }
+  }
