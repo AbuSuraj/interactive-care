@@ -38,7 +38,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-center mt-10 font-medium tracking-wide text-sm text-gray-600">
-            &copy; Copyright 2020, Treact Inc. All Rights Reserved.
+            &copy; Copyright 2023, DigitalDynamo All Rights Reserved.
           </p>
         </div>
       </div>
