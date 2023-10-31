@@ -5,19 +5,19 @@ import linkedIn from "../../assets/images/linkedIn.svg"
 const Footer = () => {
   return (
     <div className="bg-gray-900 text-gray-100  -mb-8">
-      <div className="max-w-screen-xl mx-auto py-20 lg:py-24">
+      <div className="max-w-screen-xl mx-auto py-10 lg:py-24">
         <div className="flex items-center justify-center flex-col px-8">
           <div className="flex items-center justify-center md:justify-start">
             <img src={logo} className="w-7 h-7 rounded-full" alt="Logo" />
             <h5 className="ml-2 text-2xl font-black tracking-wider">DigitalDynamo</h5>
           </div>
-          <div className="mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row">
-            <a href="#" className="border-b-2 border-transparent hover:text-gray-300 hover:border-gray-300 pb-1 transition duration-300 mt-2 mx-4">Home</a>
-            <a href="#" className="border-b-2 border-transparent hover:text-gray-300 hover:border-gray-300 pb-1 transition duration-300 mt-2 mx-4">About</a>
+          {/* <div className="mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row">
+            <a href='#hero' className="border-b-2 border-transparent hover:text-gray-300 hover:border-gray-300 pb-1 transition duration-300 mt-2 mx-4">Home</a>
+            <a href='#clients' className="border-b-2 border-transparent hover:text-gray-300 hover:border-gray-300 pb-1 transition duration-300 mt-2 mx-4">About</a>
             <a href="#" className="border-b-2 border-transparent hover:text-gray-300 hover:border-gray-300 pb-1 transition duration-300 mt-2 mx-4">Contact Us</a>
             <a href="#" className="border-b-2 border-transparent hover:text-gray-300 hover:border-gray-300 pb-1 transition duration-300 mt-2 mx-4">Blog</a>
             <a href="#" className="border-b-2 border-transparent hover:text-gray-300 hover:border-gray-300 pb-1 transition duration-300 mt-2 mx-4">Reviews</a>
-          </div>
+          </div> */}
           <div className="mt-10 flex items-center">
             <a href="https://facebook.com" className="cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4">
               
